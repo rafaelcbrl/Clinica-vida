@@ -8,7 +8,7 @@ aplicação completa entregue na Aula 20. O enunciado completo do case está em
 
 ## Identificação
 
-- Nome completo:
-- RA:
-- Turma: (quarta ou quinta)
+- Nome completo: Rafael Cabral Ricobom
+- RA: 926116178
+- Turma:4 (quinta)
 - O que espero aprender:
