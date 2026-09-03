@@ -10,5 +10,5 @@ aplicação completa entregue na Aula 20. O enunciado completo do case está em
 
 - Nome completo: Rafael Cabral Ricobom
 - RA: 926116178
-- Turma:4 (quinta)
-- O que espero aprender:
+- Turma: 4 (quinta)
+- O que espero aprender: Aprender a desenvolver aplicações web de forma prática, desde a criação até a publicação de um projeto 
