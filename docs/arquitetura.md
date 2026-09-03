@@ -49,4 +49,13 @@ Referer: https://github.com/rafaelcbrl/Clinica-vida
 Sec-Fetch-Dest: script
 Sec-Fetch-Mode: cors
 Sec-Fetch-Site: cross-site
-```
+
+### Evidência de erro 404
+
+Foi realizada uma requisição para uma página inexistente:
+
+| Método | Recurso | Status |
+|---|---|---|
+| GET | /rafaelcbrl/Clinica-vida/pagina-que-nao-existe | 404 Not Found |
+
+A resposta `404 Not Found` indica que o recurso solicitado não foi encontrado no servidor.
