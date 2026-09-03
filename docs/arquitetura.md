@@ -59,3 +59,7 @@ Foi realizada uma requisição para uma página inexistente:
 | GET | /rafaelcbrl/Clinica-vida/pagina-que-nao-existe | 404 Not Found |
 
 A resposta `404 Not Found` indica que o recurso solicitado não foi encontrado no servidor.
+
+## Por que HTTPS é necessário
+
+O formulário de agendamento da Clínica Vida+ precisa utilizar HTTPS para proteger os dados enviados entre o navegador do paciente e o servidor. Esses dados podem incluir informações pessoais, como nome, telefone e dados relacionados ao atendimento. O HTTPS criptografa a comunicação e dificulta que terceiros interceptem ou alterem essas informações durante o envio. Dessa forma, a conexão oferece mais segurança e privacidade para o paciente.
