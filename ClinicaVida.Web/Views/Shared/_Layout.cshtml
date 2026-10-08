@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"] - Clínica Vida+</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+          href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- CSS principal da Clínica Vida+ -->
+    <link rel="stylesheet"
+          href="~/css/site.css"
+          asp-append-version="true" />
+
+    <!-- CSS gerado pelo ASP.NET Core -->
+    <link rel="stylesheet"
+          href="~/ClinicaVida.Web.styles.css"
+          asp-append-version="true" />
+
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+
+    <header>
+
+        <h1>Clínica Vida+</h1>
+
+        <p>
+            Atendimento médico de qualidade
+            para cuidar da sua saúde.
+        </p>
+
+    </header>
+
+
+    <!-- Menu principal -->
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a asp-area=""
+                   asp-controller="Home"
+                   asp-action="Index">
+                    A clínica
+                </a>
+            </li>
+
+            <li>
+                <a href="/#especialidades">
+                    Especialidades
+                </a>
+            </li>
+
+            <li>
+                <a href="/#corpo-clinico">
+                    Corpo clínico
+                </a>
+            </li>
+
+            <li>
+                <a href="/agendamento.html">
+                    Agendar consulta
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- Conteúdo da página -->
+
+    <main>
+
+        @RenderBody()
+
+    </main>
+
+
+    <!-- Rodapé -->
+
+    <footer>
+
+        <p>
+            Rua das Acácias, 120, São Paulo.
+            Telefone: (11) 4002-8922
+        </p>
+
+        <p>
+            &copy; 2026 - Clínica Vida+
+        </p>
+
+    </footer>
+
+
+    <!-- Scripts -->
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/js/site.js"
+            asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+
+</html>

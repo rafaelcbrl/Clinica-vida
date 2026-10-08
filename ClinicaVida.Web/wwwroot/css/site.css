@@ -1,0 +1,221 @@
+:root {
+    --vida-primaria: #0B6E75;
+    --vida-secundaria: #2E9E7E;
+    --vida-destaque: #E4572E;
+    --vida-fundo: #F4F7F6;
+    --vida-texto: #1F2A30;
+    --vida-borda: #D6E2E0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--vida-texto);
+    background-color: var(--vida-fundo);
+}
+
+header {
+    background-color: var(--vida-primaria);
+    color: #FFFFFF;
+    padding: 24px 32px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+nav {
+    background-color: var(--vida-primaria);
+    padding: 0 32px 16px;
+}
+
+nav ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 32px;
+}
+
+main section {
+    margin-bottom: 32px;
+}
+
+h2 {
+    color: var(--vida-primaria);
+}
+
+.lista-especialidades {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.lista-especialidades li {
+    width: auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-left: 4px solid var(--vida-secundaria);
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lista-especialidades li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+}
+
+th {
+    background-color: var(--vida-primaria);
+    color: #FFFFFF;
+    text-align: left;
+    padding: 12px 16px;
+}
+
+td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--vida-borda);
+}
+
+tr:nth-child(even) {
+    background-color: #F5F5F5;
+}
+
+/* Formulário */
+
+.form-agendamento {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+fieldset {
+    margin-bottom: 24px;
+    padding: 24px;
+    border: 1px solid var(--vida-borda);
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+legend {
+    padding: 0 8px;
+    font-weight: 700;
+    color: var(--vida-primaria);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px 24px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-largo {
+    grid-column: 1 / -1;
+}
+
+.campo label {
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--vida-borda);
+    border-radius: 6px;
+    font: inherit;
+    color: var(--vida-texto);
+    background-color: #FFFFFF;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: 3px solid var(--vida-destaque);
+    outline-offset: 1px;
+}
+
+button[type="submit"] {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--vida-primaria);
+    color: #FFFFFF;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--vida-secundaria);
+}
+
+footer {
+    background-color: var(--vida-texto);
+    color: #FFFFFF;
+    padding: 24px 32px;
+    margin-top: 40px;
+}
+
+/* Tablet */
+
+@media (min-width: 640px) {
+
+    .lista-especialidades {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .form-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+
+    .form-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
